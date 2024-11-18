@@ -7,8 +7,17 @@
     <link rel="stylesheet" href="./commonStyle.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/aa7454d09f.js" crossorigin="anonymous"></script>
+
+    
+   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+
+    <!--Scrolling animation link-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
+    
      <!-- Header -->
      <header>
         <div id="logo">
@@ -25,6 +34,9 @@
             <li class="nav-link"><a href="./index.html">Home</a></li>
             <li class="nav-link"><a href="./aboutus.html">About Us</a></li>
             <li class="nav-link"><a href="./contact.html">Contact</a></li>
+            <li class="nav-link"><a href="./investment.html">Investment</a></li>
+            <li class="nav-link"><a href="./plans.html">Plan</a></li>
+            <li class="nav-link"><a href="./transaction.html">Transactions</a></li>
             <li class="sociallinkContainer">
                 <img class="sociallink" src="./img/fabook-icon-white.svg" alt="">
                 <img class="sociallink" src="./img/twitter-icon-white.svg" alt="">
@@ -37,66 +49,121 @@
         </div>
     </header>
 
+    <center>
+
+        <style>
+            /* Container for the Google Translate widget */
+            #google_translate_element {
+                display: flex; /* Use flexbox for horizontal layout */
+                justify-content: center; /* Center it horizontally */
+                align-items: center; /* Align items vertically */
+                gap: 10px; /* Add spacing between items */
+                margin: 20px 0; /* Add spacing around the widget */
+                width: 80vw;
+            }
+    
+            /* Styling the translate dropdown */
+            #google_translate_element select {
+                width: 100%; /* Make the dropdown responsive */
+                max-width: 300px; /* Set a max width for larger screens */
+                padding: 5px 10px; /* Add padding inside the dropdown */
+                font-size: 16px; /* Improve readability */
+                border: 1px solid #ccc; /* Add a subtle border */
+                border-radius: 5px; /* Round the corners */
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+            }
+    
+            /* Make the widget responsive */
+            @media (max-width: 600px) {
+                #google_translate_element {
+                    flex-direction: column; /* Stack items vertically on smaller screens */
+                }
+            }
+        </style>
+    
+    
+        <div id="google_translate_element"></div>
+    
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement(
+                    {pageLanguage: 'en'},
+                    'google_translate_element'
+                );
+            }
+        </script>
+    
+        <script type="text/javascript" 
+                src=
+    "https://translate.google.com/translate_a/element.js?
+    cb=googleTranslateElementInit">
+        </script>
+    </center>
+    
+
     <!-- aboutus hero  -->
     <section class="gridSection">
         <div class="sectionDesc aboutusDesc">
-            <h1 class="headline">
+            <h1 data-aos="fade-up" class="headline">
                 The Company History
             </h1>
-            <p class="sub-headline">
+            <p data-aos="fade-up" class="sub-headline">
                 It is the perfect spot get started with your company. 
                 It can be the first thing that people see and it will set 
                 the tone for their experience with your company.
             </p>
         </div>
         <div class="sectionPic bouncepic aboutusPic" id="sectionPic">
-            <img src="./img/about-hero.png" alt="">
+            <img data-aos="fade-up" src="./img/about-hero.png" alt="">
         </div>
     </section>
 
+ 
+
+
     <!-- About us status -->
-    <div class="statusContainer">
+    <div class="statusContainer" data-aos="fade-up">
         <div class="status">
-            <h1><b>360</b> Client</h1>
-            <p>An about page is a key component of every website.</p>
+            <h1 data-aos="fade-up"><b>360</b> Client</h1>
+            <p data-aos="fade-up">An about page is a key component of every website.</p>
         </div>
 
-        <div class="status">
-            <h1><b>150+</b> Projects</h1>
-            <p>Page is the first page a visitor sees when they visit your website.</p>
+        <div data-aos="fade-up" class="status">
+            <h1 data-aos="fade-up"><b>150+</b> Projects</h1>
+            <p data-aos="fade-up">Page is the first page a visitor sees when they visit your website.</p>
         </div>
 
-        <div class="status">
-            <h1><b>20+</b> Countries</h1>
-            <p>It is the perfect spot to get started with your company.</p>
+        <div data-aos="fade-up" class="status">
+            <h1 data-aos="fade-up"><b>20+</b> Countries</h1>
+            <p data-aos="fade-up">It is the perfect spot to get started with your company.</p>
         </div>
     </div>
 
-    <div class="services">
+    <div class="services" data-aos="fade-up">
         <div class="aboutusimgContainer">
-            <img src="./img/about-image-1.jpg" alt="">
-            <img src="./img/about-image-2.jpg" alt="">
+            <img data-aos="fade-up" src="./img/about-image-1.jpg" alt="">
+            <img data-aos="fade-up" src="./img/about-image-2.jpg" alt="">
         </div>
 
-        <div class="offers">
+        <div class="offers" data-aos="fade-up">
             <div class="eachOffer">
-                <img src="./img/fast-forward-icon-white.svg" alt="">
+                <img data-aos="fade-up" src="./img/fast-forward-icon-white.svg" alt="">
                 <div class="offerDesc">
                     <h1>Fast Management</h1>
                     <p>The Complete Guide to Management and How to Implement it Quickly and Effectively</p>
                 </div>
             </div>
 
-            <div class="eachOffer">
-                <img src="./img/support-agent-icon-white.svg" alt="">
+            <div class="eachOffer" data-aos="fade-up">
+                <img data-aos="fade-up" src="./img/support-agent-icon-white.svg" alt="">
                 <div class="offerDesc">
                     <h1>Best Support</h1>
                     <p>The Best Support for Online crypto & How to Craft a Compelling Description</p>
                 </div>
             </div>
 
-            <div class="eachOffer">
-                <img src="./img/progress-warning-icon-white.svg" alt="">
+            <div class="eachOffer" data-aos="fade-up">
+                <img data-aos="fade-up" src="./img/progress-warning-icon-white.svg" alt="">
                 <div class="offerDesc">
                     <h1>Best Progress</h1>
                     <p>What is a Crypto-Mining Malware and Why You MUST Protect Against Them</p>
@@ -105,13 +172,66 @@
         </div>
     </div>
 
+
+    
+    <center>
+
+        <style>
+            /* Container for the Google Translate widget */
+            #google_translate_element {
+                display: flex; /* Use flexbox for horizontal layout */
+                justify-content: center; /* Center it horizontally */
+                align-items: center; /* Align items vertically */
+                gap: 10px; /* Add spacing between items */
+                margin: 20px 0; /* Add spacing around the widget */
+                width: 80vw;
+            }
+    
+            /* Styling the translate dropdown */
+            #google_translate_element select {
+                width: 100%; /* Make the dropdown responsive */
+                max-width: 300px; /* Set a max width for larger screens */
+                padding: 5px 10px; /* Add padding inside the dropdown */
+                font-size: 16px; /* Improve readability */
+                border: 1px solid #ccc; /* Add a subtle border */
+                border-radius: 5px; /* Round the corners */
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+            }
+    
+            /* Make the widget responsive */
+            @media (max-width: 600px) {
+                #google_translate_element {
+                    flex-direction: column; /* Stack items vertically on smaller screens */
+                }
+            }
+        </style>
+    
+    
+        <div id="google_translate_element"></div>
+    
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement(
+                    {pageLanguage: 'en'},
+                    'google_translate_element'
+                );
+            }
+        </script>
+    
+        <script type="text/javascript" 
+                src=
+    "https://translate.google.com/translate_a/element.js?
+    cb=googleTranslateElementInit">
+        </script>
+    </center>
+
     <!-- Play Video -->
        <section class="videoSection">
             <h1 class="videoSectionHeader">Play The Video.</h1>
            <div class="videoContainer">
             <div class="video">
-                <img src="./img/about-video.jpg" class="thumbnail" alt="">
-                <img src="./img/video-play-icon-white.svg" class="playIcon" alt="">
+                <img data-aos="fade-up" src="./img/about-video.jpg" class="thumbnail" alt="">
+                <img data-aos="fade-up" src="./img/video-play-icon-white.svg" class="playIcon" alt="">
             </div>
             <p>
             Crypto mining has become more popular with people
@@ -129,12 +249,12 @@
         <div class="carouselContainer">
             <div class="eachCarousel eachTeam">
                 <div class="teamPic">
-                    <img src="./img/team-image-1.jpg" alt="">
+                    <img data-aos="fade-up" src="./img/team-image-1.jpg" alt="">
                     <div class="teamSocialLink">
-                        <img src="./img/Facebook_black.svg" alt="">
-                        <img src="./img/Vimeo_black.svg" alt="">
-                        <img src="./img/Twitter_black.svg" alt="">
-                        <img src="./img/Instagram_black.svg" alt="">
+                        <img data-aos="fade-up" src="./img/Facebook_black.svg" alt="">
+                        <img data-aos="fade-up" src="./img/Vimeo_black.svg" alt="">
+                        <img data-aos="fade-up" src="./img/Twitter_black.svg" alt="">
+                        <img data-aos="fade-up" src="./img/Instagram_black.svg" alt="">
                     </div>
                 </div>
                 <div class="teamDesc">
@@ -144,63 +264,63 @@
 
             </div>
     
-            <div class="eachCarousel eachTeam">
+            <div data-aos="fade-up" class="eachCarousel eachTeam">
                 <div class="teamPic">
-                    <img src="./img/team-image-2.jpg" alt="">
+                    <img data-aos="fade-up" src="./img/team-image-2.jpg" alt="">
                     <div class="teamSocialLink">
-                        <img src="./img/Facebook_black.svg" alt="">
-                        <img src="./img/Vimeo_black.svg" alt="">
-                        <img src="./img/Twitter_black.svg" alt="">
-                        <img src="./img/Instagram_black.svg" alt="">
+                        <img data-aos="fade-up" src="./img/Facebook_black.svg" alt="">
+                        <img data-aos="fade-up" src="./img/Vimeo_black.svg" alt="">
+                        <img data-aos="fade-up" src="./img/Twitter_black.svg" alt="">
+                        <img data-aos="fade-up" src="./img/Instagram_black.svg" alt="">
                     </div>
                 </div>
                 <div class="teamDesc">
-                    <h1 class="teamName">Richard Taylor</h1>
-                    <p class="position">Developer</p>
+                    <h1 data-aos="fade-up" class="teamName">Richard Taylor</h1>
+                    <p data-aos="fade-up" class="position">Developer</p>
+                </div>
+            </div>
+    
+            <div data-aos="fade-up" class="eachCarousel eachTeam">
+                <div class="teamPic">
+                    <img data-aos="fade-up" src="./img/team-image-3.jpg" alt="">
+                    <div class="teamSocialLink">
+                        <img data-aos="fade-up" src="./img/Facebook_black.svg" alt="">
+                        <img data-aos="fade-up" src="./img/Vimeo_black.svg" alt="">
+                        <img data-aos="fade-up" src="./img/Twitter_black.svg" alt="">
+                        <img data-aos="fade-up" src="./img/Instagram_black.svg" alt="">
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="teamDesc">
+                    <h1 data-aos="fade-up" class="teamName">Bertha Earley</h1>
+                    <p data-aos="fade-up" class="position">Content writer</p>
                 </div>
             </div>
     
             <div class="eachCarousel eachTeam">
-                <div class="teamPic">
-                    <img src="./img/team-image-3.jpg" alt="">
-                    <div class="teamSocialLink">
-                        <img src="./img/Facebook_black.svg" alt="">
-                        <img src="./img/Vimeo_black.svg" alt="">
-                        <img src="./img/Twitter_black.svg" alt="">
-                        <img src="./img/Instagram_black.svg" alt="">
+                <div data-aos="fade-up" class="teamPic">
+                    <img data-aos="fade-up" src="./img/team-image-1.jpg" alt="">
+                    <div data-aos="fade-up" class="teamSocialLink">
+                        <img data-aos="fade-up" src="./img/Facebook_black.svg" alt="">
+                        <img data-aos="fade-up" src="./img/Vimeo_black.svg" alt="">
+                        <img data-aos="fade-up" src="./img/Twitter_black.svg" alt="">
+                        <img data-aos="fade-up" src="./img/Instagram_black.svg" alt="">
                     </div>
                 </div>
-                <div class="teamDesc">
-                    <h1 class="teamName">Bertha Earley</h1>
-                    <p class="position">Content writer</p>
-                </div>
-            </div>
-    
-            <div class="eachCarousel eachTeam">
-                <div class="teamPic">
-                    <img src="./img/team-image-1.jpg" alt="">
-                    <div class="teamSocialLink">
-                        <img src="./img/Facebook_black.svg" alt="">
-                        <img src="./img/Vimeo_black.svg" alt="">
-                        <img src="./img/Twitter_black.svg" alt="">
-                        <img src="./img/Instagram_black.svg" alt="">
-                    </div>
-                </div>
-                <div class="teamDesc">
-                    <h1 class="teamName">Rebecca Walters</h1>
-                    <p class="position">UI UX Designer</p>
+                <div data-aos="fade-up" class="teamDesc" data-aos="fade-up">
+                    <h1 data-aos="fade-up" class="teamName" data-aos="fade-up">Rebecca Walters</h1>
+                    <p data-aos="fade-up" class="position" data-aos="fade-up">UI UX Designer</p>
                 </div>
 
             </div>
     
-            <div class="eachCarousel eachTeam">
-                <div class="teamPic">
-                    <img src="./img/team-image-2.jpg" alt="">
+            <div data-aos="fade-up" class="eachCarousel eachTeam" data-aos="fade-up">
+                <div data-aos="fade-up" class="teamPic" data-aos="fade-up">
+                    <img data-aos="fade-up" src="./img/team-image-2.jpg" alt="">
                     <div class="teamSocialLink">
-                        <img src="./img/Facebook_black.svg" alt="">
-                        <img src="./img/Vimeo_black.svg" alt="">
-                        <img src="./img/Twitter_black.svg" alt="">
-                        <img src="./img/Instagram_black.svg" alt="">
+                        <img data-aos="fade-up" src="./img/Facebook_black.svg" alt="">
+                        <img data-aos="fade-up" src="./img/Vimeo_black.svg" alt="">
+                        <img data-aos="fade-up" src="./img/Twitter_black.svg" alt="">
+                        <img data-aos="fade-up" src="./img/Instagram_black.svg" alt="">
                     </div>
                 </div>
                 <div class="teamDesc">
@@ -239,16 +359,16 @@
     <footer>
         <div class="joinSection">
             <div class="joinDesc">
-                <h1 class="sectionHeader">Join with us</h1>
-                <p class="sectionPara">
+                <h1 class="sectionHeader" data-aos="fade-up">Join with us</h1>
+                <p class="sectionPara" data-aos="fade-up">
                     Once you have created your account, you can purchase coins from website
                 </p>
             </div>
-            <button class="btn primaryBtn">JOIN NOW</button>
+            <button class="btn primaryBtn" data-aos="fade-up">JOIN NOW</button>
         </div>
 
-        <div class="footerlinksContainer">
-            <div class="footerAboutus">
+        <div class="footerlinksContainer" data-aos="fade-up">
+            <div class="footerAboutus" data-aos="fade-up">
                 <img src="./img/logo-white.png" alt="">
                 <p class="darkPara">With no commissions and a simple user interface, 
                  Prouple is the most reliable way to trade for 
@@ -292,5 +412,14 @@
     </footer>
     
     <script src="./script.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1200,
+            easing: 'ease-out-back',
+            once: true,
+        });
+    </script>
+
 </body>
 </html>

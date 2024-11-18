@@ -33,3 +33,72 @@ const slideCarousel = (index) => {
    carouselContainer.scrollLeft = (index * (eachCarousel + 10))
    console.log(carouselContainer.scrollLeft)
 }
+
+document.querySelectorAll('.pricing-card').forEach((card) => {
+    card.addEventListener('mouseenter', () => {
+      card.style.transform = 'scale(1.05)';
+    });
+  
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'scale(1)';
+    });
+  });
+  
+
+
+  const track = document.querySelector('.carousel-track');
+const dots = Array.from(document.querySelectorAll('.dot'));
+
+let currentIndex = 0;
+
+// function updateCarousel() {
+//     const slideWidth = track.children[0].getBoundingClientRect().width * 3; // 3 cards at a time
+//     track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+
+//     dots.forEach((dot, index) => {
+//         dot.classList.toggle('active', index === currentIndex);
+//     });
+// }
+
+// // Auto Slide
+// setInterval(() => {
+//     currentIndex = (currentIndex + 1) % dots.length;
+//     updateCarousel();
+// }, 3000);
+
+// // Manual Navigation
+// dots.forEach((dot, index) => {
+//     dot.addEventListener('click', () => {
+//         currentIndex = index;
+//         updateCarousel();
+//     });
+// });
+
+// // Initialize
+// updateCarousel();
+
+
+$(document).ready(function(){
+
+    $('.owl-carousel').owlCarousel({
+        center: true,
+        loop:true,
+        margin:10,
+        nav:true,
+        autoplay:true,
+        autoplayHoverPause:true,
+        smartSpeed: 1500,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:3
+            }
+        }
+    })
+
+})

@@ -631,8 +631,8 @@ footer{
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   justify-content: space-between;
-  width: 90%;
-  max-width: 1100px;
+  width: 50%;
+  max-width: 100px;
   margin: auto;
 }
 
@@ -1371,3 +1371,115 @@ footer{
     background: #fff !important;
     border: 2px solid #5670ef;
 }
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 50%;
+    max-width: 1200px;
+    flex-direction: row;
+    padding: 20px 20px 20px 20px;
+  }
+  
+  /* Left Panel */
+  .profile-details {
+    flex: 1;
+    min-width: 80%;
+    background-color:  #2d324a;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile-details h2 {
+    margin-bottom: 20px;
+  }
+  
+  .profile-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .profile-item i {
+    color: blue;
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  /* Right Panel */
+  .profile-form {
+    flex: 2;
+    min-width: 300px;
+    background-color: #2d324a;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+    color: white;
+  }
+  
+  .form-group input {
+    padding: 10px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .form-group input:focus {
+    border-color: blue;
+    outline: none;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .submit-btn {
+    background-color: blue;
+    color: #000;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .submit-btn:hover {
+    background-color: blue;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      /* padding-left: 20px; */
+    }
+  
+    .profile-details, .profile-form {
+      width: 100%;
+    }
+  
+    .form-row {
+      flex-direction: column;
+    }
+  }
